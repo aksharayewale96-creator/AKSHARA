@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rock Paper Scissors</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#22c55e;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071026 0%, #081226 100%);color:#e6eef8;display:flex;align-items:center;justify-content:center;height:100vh;padding:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border-radius:12px;padding:22px;width:100%;max-width:720px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+    h1{margin:0 0 8px;font-size:20px}
+    p.lead{margin:0 0 18px;color:var(--muted)}
+    .controls{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:#0b1220;border:1px solid rgba(255,255,255,0.04);padding:12px 18px;border-radius:10px;cursor:pointer;min-width:120px;text-align:center;font-weight:600;transition:transform .12s ease, box-shadow .12s ease}
+    .btn:active{transform:translateY(1px)}
+    .choices{display:flex;gap:12px;justify-content:center;margin:18px 0}
+    .choice{flex:1;padding:14px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);cursor:pointer;text-align:center;font-size:18px}
+    .choice:hover{transform:scale(1.03)}
+    .result{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}
+    .panel{flex:1;padding:14px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+    .big{font-size:18px;font-weight:700}
+    .score{display:flex;gap:12px;align-items:center}
+    .score div{min-width:84px;text-align:center}
+    .footer{margin-top:14px;text-align:right;color:var(--muted);font-size:13px}
+    .win{color:#22c55e}
+    .lose{color:#ef4444}
+    .tie{color:#f59e0b}
+    .hidden{display:none}
+    @media (max-width:520px){.btn{min-width:unset;padding:10px 12px}.choices{flex-direction:column}.result{flex-direction:column}}
+  </style>
+</head>
