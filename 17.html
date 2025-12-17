@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="u" placeholder="user">
+<input id="p" type="password">
+<button onclick="login()">Login</button>
+<p id="m"></p>
+<script>
+function login(){
+ m.innerHTML=(u.value=="admin" && p.value=="123")?"Success":"Fail";
+}
+</script>
+</body>
+</html>
